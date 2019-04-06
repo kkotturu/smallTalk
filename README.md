@@ -29,5 +29,7 @@ Installation: npm install
 Authors:
 Alex, Ethan, Katy & Kiran
 
+The challening things for this project are deployment, using passport.js and bcrypt. The passport.js is a new package that we used for authentication.  We were not able to relate how authentication works with passport.js and after reading documentation and going through many examples, were able to successfully incorporate into the project.
+
 
 @Copyright 2019
