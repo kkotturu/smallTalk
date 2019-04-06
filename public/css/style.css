@@ -3,15 +3,10 @@
 }
 
 body { 
-  padding-top: 170px; 
-  
+  padding-top: 170px;   
 }
 
-
 div#mainNav {
-  /* width: 100vw; */
-  /* margin-right: 3%;
-  margin-left: 3%; */
   background-color: white;
   padding-right: 2%;
   padding-left: 2%;
@@ -37,15 +32,13 @@ div#loginDiv {
   width: 100vw;
   background-color: rgb(27, 27, 27);
   color: white;
-  padding: 30px;
-  /* position: fixed;
-  right: 0;
-  bottom: 0; */
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 div.aboutUsDiv {
   color: rgb(104, 11, 104);
-  padding-top: 40px;
+  padding-top: 170px;
   padding-bottom: 30px;
   text-align: left;
 }
@@ -54,10 +47,16 @@ p.aboutText {
   color: black;
 }
 
+/* This is for on-page link */
+#howToSection {
+  position: relative; 
+  top: 60px;
+}
+
 div.howToDiv {
   background-color: white;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding-top: 80px;
+  padding-bottom: 50px;
   text-align: center;
   color:black;
 }
@@ -71,6 +70,10 @@ div.howToText {
   padding: 2%;
 }
 
+ul.howToList {
+  text-align: left
+}
+
 
 div.mainFooter {
   padding-top: 20px;
@@ -78,7 +81,10 @@ div.mainFooter {
   text-align: center;
   color: white;
   padding: 3%;
+  margin-top: 15px;
 }
+
+
 /* Members Page Headlines */
 
 h5.titleText {
@@ -93,5 +99,66 @@ p.titleStyle {
   text-decoration: underline;
 }
 
+/* SignUp Page Only */
+
+div.signUpFooter {
+  padding-top: 20px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 3%;
+  margin-top: 50px;
+}
+
+button.signUpButton {
+ margin-left: 15px;
+}
 
 
+
+/* media query for mobile fixed navbar*/
+
+@media only screen and (max-width: 580px) {
+  body { 
+    padding-top: 210px;   
+  }
+
+
+/* media query for mobile section heights*/
+
+  img#logoNav {
+    padding-left: 30%;
+  }
+
+  div#loginDiv {
+    padding-top: 180px;
+  }  
+
+  div.aboutUsDiv {
+    padding-top: 210px;
+  }
+
+  div.howToDiv {
+    padding-top: 10px;
+  }
+
+  #howToSection {
+    position: relative; 
+    top: 5px;
+  }
+
+  img#iconman1 {
+      width: 200px;
+      height:200px;
+      float: right;
+  }
+
+  img#iconman2 {
+    width: 200px;
+    height:200px; 
+  }
+
+  div.mainFooter {
+    padding-top: 25px;
+  }
+}

@@ -29,8 +29,15 @@ $(document).ready(function () {
   }
 
   $("#submit").on("click", function (event) {
+    event.preventDefault();
     // postsearch();
     newsAPI();
+    $("#searchBox").val("");
+    resetDiv();
   });
-});
 
+
+});
+function resetDiv() {
+  document.getElementById("quesDiv").value = "";
+}

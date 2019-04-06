@@ -49,7 +49,7 @@ module.exports = function (app) {
     req.logout();
     res.redirect("/main_1.html");
   });
-  //
+
   // Route for getting data about the user to be used at client side
   app.get("/api/user_data", function (req, res) {
     if (!req.user) {
