@@ -24,3 +24,6 @@ Heroku
 
 Authors:
 Alex, Ethan, Katy & Kiran
+
+
+@Copyright 2019
