@@ -17,7 +17,7 @@ module.exports = function (app) {
 
   app.post("/api/getArticles", function (req, res) {
     console.log(req.body);
-    axios.get("https://newsapi.org/v2/everything?q=" + req.body.query + "&language=en&totalResults=5&sortby=relevancy,popularity&apiKey=" + process.env.apiKey).then(results => {
+    axios.get("https://newsapi.org/v2/everything?q=" + req.body.query + "&language=en&totalResults=5&apiKey=" + process.env.apiKey).then(results => {
       console.log(results.data.articles);
       res.json({ articles: results.data.articles });
     }).catch(err => {
