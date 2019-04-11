@@ -3,12 +3,13 @@ $(document).ready(function () {
   function newsAPI() {
     var keyword = $("#searchBox").val().trim();
     console.log(keyword);
+    $("#quesDiv ul").empty()
 
     // After the data from the AJAX request comes back
     $.ajax({
       url: "/api/getArticles",
       method: "POST",
-      body: {
+      data: {
         query: keyword
       }
     }).done(function (response) {
@@ -19,7 +20,7 @@ $(document).ready(function () {
         response.articles.forEach((articles, i) => {
 
           if (i < 5) {
-            $("#quesDiv").append(`<p class="titleStyle">${articles.title}</p><p><b>Have you heard that:</b> ${articles.description} ?`);
+            $("#quesDiv ul").append(`<li><p class="titleStyle">${articles.title}</p><p><b>Have you heard that:</b> ${articles.description} ?</li>`);
           } else {
             return;
           }

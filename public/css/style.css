@@ -114,6 +114,9 @@ button.signUpButton {
  margin-left: 15px;
 }
 
+#quesDIv ul li{
+  text-decoration: none;
+}
 
 
 /* media query for mobile fixed navbar*/
